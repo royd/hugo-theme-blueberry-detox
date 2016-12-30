@@ -12,7 +12,11 @@
 <main class="content" role="main">
 	<div class="container">
 	{{ range .Paginator.Pages }}
-		{{ .Render "li" }}
+		{{ if isset .Params "list_item_layout" }}
+			{{ .Render .Params.list_item_layout }}
+		{{ else }}
+			{{ .Render "li" }}
+		{{ end }}
 	{{ end }}
 	{{ partial "pagination.html" . }}
 	</div>
