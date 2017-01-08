@@ -2,7 +2,8 @@
         <div class="container">
             <a href="{{ .Site.BaseURL }}index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
             <section>&copy; <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a> 2016 | All rights reserved</section>
-            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+            <section><a href="https://github.com/royd/hugo-theme-blueberry-detox">Theme</a> adapted from <a href="https://github.com/allnightgrocery/hugo-theme-blueberry-detox">Detox</a>, originally by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>.</section>
+            <section>Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
             {{ range .Site.Params.creditBadges }}
               <a class="credit-badge" href="{{ .href }}">
                   <img src="{{ .src }}">
