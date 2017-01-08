@@ -4,8 +4,16 @@
     </header>
 
     <section class="post-content">
-        <div class="post-image-left-wrapper">
-            <img class="post-image-left" src="{{ .Params.image }}" title="{{ .Params.image_title }}" alt="{{ .Params.image_title }}" />
+        <div class="post-media-left-wrapper">
+            {{ if eq .Params.media_type "video" }}
+                <video class="post-media-left" title="{{ .Params.media_title }}" alt="{{ .Params.media_title }}" controls>
+                    <source src="/{{ .Params.media_src }}.webm" type="video/webm">
+                    <source src="/{{ .Params.media_src }}.mp4" type="video/mp4">
+                    <span>Your browser does not support the video tag.</span>
+                </video>
+            {{ else if eq .Params.media_type "image" }}
+                <img class="post-media-left" src="{{ .Params.media_src }}" title="{{ .Params.media_title }}" alt="{{ .Params.media_title }}" />
+            {{ end }}
             <div class="post-text">{{ .Content }}</div>
         </div>
     </section>

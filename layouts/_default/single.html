@@ -11,8 +11,8 @@
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
-		{{ if isset .Params "post_layout" }}
-			{{ .Render .Params.post_layout }}
+		{{ if isset .Params "media_src" }}
+			{{ .Render "post-media-left" }}
 		{{ else }}
 			{{ .Render "post" }}
 		{{ end }}

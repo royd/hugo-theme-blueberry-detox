@@ -916,21 +916,22 @@ article.li {
     font-size: 13px;
     height: 10em
 }
-.list-item-wrapper {
+.list-item-wrapper,
+.post-media-left-wrapper {
   overflow: hidden;
 }
 .list-item-wrapper div,
 .list-item-wrapper p,
-.post-image-left-wrapper div {
+.post-media-left-wrapper div {
   min-height: 200px;
 }
-.list-item-image-left,
-.post-image-left {
+.list-item-media-left,
+.post-media-left {
   float:left;
   margin-right: 20px;
   max-width: 200px;
 }
-.list-item-image-right {
+.list-item-media-right {
   float:right;
   margin-left: 20px;
   max-width: 200px;
@@ -941,15 +942,15 @@ article.li {
   min-height: 170px;
 }
 @media screen and (max-width: 550px) {
-  .list-item-image-left,
-  .post-image-left {
+  .list-item-media-left,
+  .post-media-left {
     float: none;
     margin-right: 0;
     margin-bottom: 30px;
     max-width: 100%;
     border: 0;
   }
-  .list-item-image-right {
+  .list-item-media-right {
     float: none;
     margin-left: 0;
     margin-bottom: 30px;
