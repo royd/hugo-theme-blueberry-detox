@@ -916,6 +916,16 @@ article.li {
     font-size: 13px;
     height: 10em
 }
+.credit-badge {
+  display: inline-block;
+  padding: 4px;
+}
+.credit-badge img {
+  max-height: 40px;
+}
+#site-footer .credit-badge:hover {
+  border: 0;
+}
 .list-item-wrapper,
 .post-media-left-wrapper {
   overflow: hidden;
