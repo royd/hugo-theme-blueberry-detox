@@ -11,7 +11,11 @@
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
-		{{ .Render "post" }}
+		{{ if isset .Params "post_layout" }}
+			{{ .Render .Params.post_layout }}
+		{{ else }}
+			{{ .Render "post" }}
+		{{ end }}
 	</div>
 </main>
 {{ partial "footer.html" . }}
