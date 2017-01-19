@@ -931,7 +931,6 @@ article.li {
   overflow: hidden;
 }
 .list-item-wrapper div,
-.list-item-wrapper p,
 .post-media-left-wrapper div {
   min-height: 200px;
 }

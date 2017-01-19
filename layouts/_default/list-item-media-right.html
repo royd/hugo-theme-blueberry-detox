@@ -15,7 +15,7 @@
             {{ else if eq .Params.media_type "image" }}
                 <img class="list-item-media-right" src="{{ .Params.media_src }}" title="{{ .Params.media_title }}" alt="{{ .Params.media_title }}" />
             {{ end }}
-            <p class="list-item-content">{{ .Summary }}</p>
+            <div class="list-item-content">{{ .Summary }}</div>
         </div>
     </section>
 
