@@ -819,13 +819,13 @@ article.li {
         margin: 4em 0 6em 0 !important
     }
 }
-.post-content a,
+.content a,
 #site-footer a {
     color: #333;
     text-decoration: none;
     font-weight: bold
 }
-.post-content a:hover,
+.content a:hover,
 #site-footer a:hover {
     color: #e6e6e6;
     border-bottom: 1px solid
