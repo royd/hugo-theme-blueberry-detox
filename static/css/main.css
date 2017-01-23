@@ -770,8 +770,6 @@ hr {
 .blog-description {
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #b3b3b3;
-    font-size: 80%
 }
 #blog-logo img {
     margin: 0 auto 3em auto
