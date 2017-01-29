@@ -7,7 +7,7 @@
     <section class="post-excerpt">
         <div class="list-item-wrapper">
             {{ if eq .Params.media_type "video" }}
-                <video class="list-item-media-right" title="{{ .Params.media_title }}" alt="{{ .Params.media_title }}" controls preload="none" poster="/{{ .Params.media_src }}.png">
+                <video class="list-item-media-right" title="{{ .Params.media_title }}" alt="{{ .Params.media_title }}" controls preload="metadata" poster="/{{ .Params.media_src }}.png">
                     <source src="/{{ .Params.media_src }}.webm" type="video/webm">
                     <source src="/{{ .Params.media_src }}.mp4" type="video/mp4">
                     <span>Your browser does not support the video tag.</span>
